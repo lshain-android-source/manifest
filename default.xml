@@ -380,8 +380,8 @@
   <project path="prebuilts/clang/linux-x86/x86/3.3" name="lshain-android-source/prebuilts-clang-linux-x86-x86-3.3" groups="linux,x86" />
   <project path="prebuilts/devtools" name="lshain-android-source/prebuilts-devtools" />
   <project path="prebuilts/eclipse" name="lshain-android-source/prebuilts-eclipse" groups="pdk" />
-  <project path="prebuilts/eclipse-build-deps" name="lshain-android-source/prebuilts-eclipse-build-deps" groups="notdefault,eclipse" />
-  <project path="prebuilts/eclipse-build-deps-sources" name="lshain-android-source/prebuilts-eclipse-build-deps-sources" groups="notdefault,eclipse" />
+  <project path="prebuilts/eclipse-build-deps" name="lshain-android-source/prebuilts-eclipse-build-deps" groups="eclipse" />
+  <project path="prebuilts/eclipse-build-deps-sources" name="lshain-android-source/prebuilts-eclipse-build-deps-sources" groups="eclipse" />
   <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6" name="lshain-android-source/prebuilts-gcc-darwin-x86-arm-arm-eabi-4.6" groups="pdk,darwin,arm" />
   <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" name="lshain-android-source/prebuilts-gcc-darwin-x86-arm-arm-eabi-4.7" groups="pdk,darwin,arm" />
   <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6" name="lshain-android-source/prebuilts-gcc-darwin-x86-arm-arm-linux-androideabi-4.6" groups="pdk,darwin,arm" />
@@ -420,16 +420,16 @@
   <project path="system/netd" name="lshain-android-source/system-netd" groups="pdk" />
   <project path="system/security" name="lshain-android-source/system-security" groups="pdk" />
   <project path="system/vold" name="lshain-android-source/system-vold" groups="pdk" />
-  <project path="tools/adt/eclipse" name="lshain-android-source/tools-adt-eclipse" groups="notdefault,tools" />
-  <project path="tools/adt/idea" name="lshain-android-source/tools-adt-idea" groups="notdefault,tools" />
-  <project path="tools/base" name="lshain-android-source/tools-base" groups="notdefault,tools" />
-  <project path="tools/build" name="lshain-android-source/tools-build" groups="notdefault,tools" />
-  <project path="tools/emulator" name="lshain-android-source/tools-emulator" groups="notdefault,tools" />
+  <project path="tools/adt/eclipse" name="lshain-android-source/tools-adt-eclipse" groups="tools" />
+  <project path="tools/adt/idea" name="lshain-android-source/tools-adt-idea" groups="tools" />
+  <project path="tools/base" name="lshain-android-source/tools-base" groups="tools" />
+  <project path="tools/build" name="lshain-android-source/tools-build" groups="tools" />
+  <project path="tools/emulator" name="lshain-android-source/tools-emulator" groups="tools" />
   <project path="tools/external/fat32lib" name="lshain-android-source/tools-external-fat32lib" groups="tools" />
   <project path="tools/external/gradle" name="lshain-android-source/tools-external-gradle" groups="tools" />
-  <project path="tools/idea" name="lshain-android-source/tools-idea" groups="notdefault,tools" />
-  <project path="tools/motodev" name="lshain-android-source/tools-motodev" groups="notdefault,motodev" />
-  <project path="tools/studio/cloud" name="lshain-android-source/tools-studio-cloud" groups="notdefault,tools" />
-  <project path="tools/swt" name="lshain-android-source/tools-swt" groups="notdefault,tools" />
+  <project path="tools/idea" name="lshain-android-source/tools-idea" groups="tools" />
+  <project path="tools/motodev" name="lshain-android-source/tools-motodev" groups="motodev" />
+  <project path="tools/studio/cloud" name="lshain-android-source/tools-studio-cloud" groups="tools" />
+  <project path="tools/swt" name="lshain-android-source/tools-swt" groups="tools" />
 
 </manifest>
