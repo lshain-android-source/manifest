@@ -1,0 +1,434 @@
+<manifest>
+
+  <remote  name="origin"
+           fetch="git://github.com" />
+
+  <default revision="refs/heads/master"
+           remote="origin"
+           sync-j="4" />
+
+  <project path="test" name="lshain-android-source/test" />
+
+  <project path="build" name="lshain-android-source/build" groups="pdk" >
+      <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
+  <project path="abi/cpp" name="lshain-android-source/abi-cpp" groups="pdk" />
+  <project path="art" name="lshain-android-source/art" />
+  <project path="bionic" name="lshain-android-source/bionic" groups="pdk" />
+  <project path="bootable/bootloader/legacy" name="lshain-android-source/bootable-bootloader-legacy" />
+  <project path="bootable/diskinstaller" name="lshain-android-source/bootable-diskinstaller" />
+  <project path="bootable/recovery" name="lshain-android-source/bootable-recovery" groups="pdk" />
+  <project path="cts" name="lshain-android-source/cts" groups="cts" />
+  <project path="dalvik" name="lshain-android-source/dalvik" />
+  <project path="developers/build" name="lshain-android-source/developers-build" />
+  <project path="developers/demos" name="lshain-android-source/developers-demos" />
+  <project path="developers/docs" name="lshain-android-source/developers-docs" />
+  <project path="developers/samples/android" name="lshain-android-source/developers-samples-android" />
+  <project path="development" name="lshain-android-source/development" />
+  <project path="device/asus/deb" name="lshain-android-source/device-asus-deb" groups="device,flo" />
+  <project path="device/asus/flo" name="lshain-android-source/device-asus-flo" groups="device,flo" />
+  <project path="device/asus/flo-kernel" name="lshain-android-source/device-asus-flo-kernel" groups="device,flo" />
+  <project path="device/asus/grouper" name="lshain-android-source/device-asus-grouper" groups="device,grouper" />
+  <project path="device/asus/tilapia" name="lshain-android-source/device-asus-tilapia" groups="device,grouper" />
+  <project path="device/common" name="lshain-android-source/device-common" />
+  <project path="device/generic/armv7-a-neon" name="lshain-android-source/device-generic-armv7-a-neon" groups="pdk" />
+  <project path="device/generic/common" name="lshain-android-source/device-generic-common" groups="pdk" />
+  <project path="device/generic/goldfish" name="lshain-android-source/device-generic-goldfish" groups="pdk" />
+  <project path="device/generic/mips" name="lshain-android-source/device-generic-mips" groups="pdk" />
+  <project path="device/generic/mini-emulator-armv7-a-neon" name="lshain-android-source/device-generic-mini-emulator-armv7-a-neon" groups="pdk" />
+  <project path="device/generic/mini-emulator-mips" name="lshain-android-source/device-generic-mini-emulator-mips" groups="pdk" />
+  <project path="device/generic/mini-emulator-x86" name="lshain-android-source/device-generic-mini-emulator-x86" groups="pdk" />
+  <project path="device/generic/x86" name="lshain-android-source/device-generic-x86" groups="pdk" />
+  <project path="device/google/accessory/arduino" name="lshain-android-source/device-google-accessory-arduino" groups="device" />
+  <project path="device/google/accessory/demokit" name="lshain-android-source/device-google-accessory-demokit" groups="device" />
+  <project path="device/lge/hammerhead" name="lshain-android-source/device-lge-hammerhead" groups="device,hammerhead" />
+  <project path="device/lge/hammerhead-kernel" name="lshain-android-source/device-lge-hammerhead-kernel" groups="device,hammerhead" />
+  <project path="device/lge/mako" name="lshain-android-source/device-lge-mako" groups="device,mako" />
+  <project path="device/lge/mako-kernel" name="lshain-android-source/device-lge-mako-kernel" groups="device,mako" />
+  <project path="device/sample" name="lshain-android-source/device-sample" groups="pdk" />
+  <project path="device/samsung/manta" name="lshain-android-source/device-samsung-manta" groups="device,manta" />
+  <project path="docs/source.android.com" name="lshain-android-source/docs-source.android.com" />
+  <project path="external/aac" name="lshain-android-source/external-aac" groups="pdk" />
+  <project path="external/android-clat" name="lshain-android-source/external-android-clat" />
+  <project path="external/android-mock" name="lshain-android-source/external-android-mock" />
+  <project path="external/ant-glob" name="lshain-android-source/external-ant-glob" />
+  <project path="external/antlr" name="lshain-android-source/external-antlr" />
+  <project path="external/apache-harmony" name="lshain-android-source/external-apache-harmony" />
+  <project path="external/apache-http" name="lshain-android-source/external-apache-http" />
+  <project path="external/apache-qp" name="lshain-android-source/external-apache-qp" />
+  <project path="external/apache-xml" name="lshain-android-source/external-apache-xml" />
+  <project path="external/arduino" name="lshain-android-source/external-arduino" />
+  <project path="external/bison" name="lshain-android-source/external-bison" groups="pdk" />
+  <project path="external/blktrace" name="lshain-android-source/external-blktrace" />
+  <project path="external/bluetooth/bluedroid" name="lshain-android-source/external-bluetooth-bluedroid" groups="pdk" />
+  <project path="external/bouncycastle" name="lshain-android-source/external-bouncycastle" />
+  <project path="external/bsdiff" name="lshain-android-source/external-bsdiff" groups="pdk" />
+  <project path="external/bzip2" name="lshain-android-source/external-bzip2" groups="pdk" />
+  <project path="external/ceres-solver" name="lshain-android-source/external-ceres-solver" />
+  <project path="external/checkpolicy" name="lshain-android-source/external-checkpolicy" groups="pdk" />
+  <project path="external/chromium" name="lshain-android-source/external-chromium" />
+  <project path="external/chromium-libpac" name="lshain-android-source/external-chromium-libpac" />
+  <project path="external/chromium-trace" name="lshain-android-source/external-chromium-trace" groups="pdk" />
+  <project path="external/chromium_org" name="lshain-android-source/external-chromium_org" />
+  <project path="external/chromium_org/sdch/open-vcdiff" name="lshain-android-source/external-chromium_org-sdch-open-vcdiff" />
+  <project path="external/chromium_org/testing/gtest" name="lshain-android-source/external-chromium_org-testing-gtest" />
+  <project path="external/chromium_org/third_party/WebKit" name="lshain-android-source/external-chromium_org-third_party-WebKit" />
+  <project path="external/chromium_org/third_party/angle_dx11" name="lshain-android-source/external-chromium_org-third_party-angle_dx11" />
+  <project path="external/chromium_org/third_party/eyesfree/src/android/java/src/com/googlecode/eyesfree/braille" name="lshain-android-source/external-chromium_org-third_party-eyesfree-src-android-java-src-com-googlecode-eyesfree-braille" />
+  <project path="external/chromium_org/third_party/freetype" name="lshain-android-source/external_chromium_org-third_party-freetype" />
+  <project path="external/chromium_org/third_party/icu" name="lshain-android-source/external-chromium_org-third_party-icu" />
+  <project path="external/chromium_org/third_party/leveldatabase/src" name="lshain-android-source/external-chromium_org-third_party-leveldatabase-src" />
+  <project path="external/chromium_org/third_party/libjingle/source/talk" name="lshain-android-source/external-chromium_org-third_party-libjingle-source-talk" />
+  <project path="external/chromium_org/third_party/libphonenumber/src/phonenumbers" name="lshain-android-source/external-chromium_org-third_party-libphonenumber-src-phonenumbers" />
+  <project path="external/chromium_org/third_party/libphonenumber/src/resources" name="lshain-android-source/external-chromium_org-third_party-libphonenumber-src-resources" />
+  <project path="external/chromium_org/third_party/mesa/src" name="lshain-android-source/external-chromium_org-third_party-mesa-src" />
+  <project path="external/chromium_org/third_party/openssl" name="lshain-android-source/external-chromium_org-third_party-openssl" />
+  <project path="external/chromium_org/third_party/opus/src" name="lshain-android-source/external-chromium_org-third_party-opus-src" />
+  <project path="external/chromium_org/third_party/ots" name="lshain-android-source/external-chromium_org-third_party-ots" />
+  <project path="external/chromium_org/third_party/skia/gyp" name="lshain-android-source/external-chromium_org-third_party-skia-gyp" />
+  <project path="external/chromium_org/third_party/skia/include" name="lshain-android-source/external-chromium_org-third_party-skia-include" />
+  <project path="external/chromium_org/third_party/skia/src" name="lshain-android-source/external-chromium_org-third_party-skia-src" />
+  <project path="external/chromium_org/third_party/smhasher/src" name="lshain-android-source/external-chromium_org-third_party-smhasher-src" />
+  <project path="external/chromium_org/third_party/yasm/source/patched-yasm" name="lshain-android-source/external-chromium_org-third_party-yasm-source-patched-yasm" />
+  <project path="external/chromium_org/tools/grit" name="lshain-android-source/external-chromium_org-tools-grit" />
+  <project path="external/chromium_org/tools/gyp" name="lshain-android-source/external-chromium_org-tools-gyp" />
+  <project path="external/chromium_org/v8" name="lshain-android-source/external-chromium_org-v8" />
+  <project path="external/clang" name="lshain-android-source/external-clang" groups="pdk" />
+  <project path="external/compiler-rt" name="lshain-android-source/external-compiler-rt" groups="pdk" />
+  <project path="external/dexmaker" name="lshain-android-source/external-dexmaker" />
+  <project path="external/dhcpcd" name="lshain-android-source/external-dhcpcd" />
+  <project path="external/dnsmasq" name="lshain-android-source/external-dnsmasq" groups="pdk" />
+  <project path="external/doclava" name="lshain-android-source/external-doclava" />
+  <project path="external/dropbear" name="lshain-android-source/external-dropbear" />
+  <project path="external/droiddriver" name="lshain-android-source/external-droiddriver" />
+  <project path="external/e2fsprogs" name="lshain-android-source/external-e2fsprogs" groups="pdk" />
+  <project path="external/easymock" name="lshain-android-source/external-easymock" />
+  <project path="external/eclipse-basebuilder" name="lshain-android-source/external-eclipse-basebuilder" />
+  <project path="external/eclipse-windowbuilder" name="lshain-android-source/external-eclipse-windowbuilder" />
+  <project path="external/eigen" name="lshain-android-source/external-eigen" />
+  <project path="external/elfutils" name="lshain-android-source/external-elfutils" />
+  <project path="external/embunit" name="lshain-android-source/external-embunit" />
+  <project path="external/emma" name="lshain-android-source/external-emma" />
+  <project path="external/esd" name="lshain-android-source/external-esd" />
+  <project path="external/expat" name="lshain-android-source/external-expat" groups="pdk" />
+  <project path="external/eyes-free" name="lshain-android-source/external-eyes-free" />
+  <project path="external/fdlibm" name="lshain-android-source/external-fdlibm" />
+  <project path="external/flac" name="lshain-android-source/external-flac" groups="pdk" />
+  <project path="external/freetype" name="lshain-android-source/external-freetype" groups="pdk" />
+  <project path="external/fsck_msdos" name="lshain-android-source/external-fsck_msdos" />
+  <project path="external/ganymed-ssh2" name="lshain-android-source/external-ganymed-ssh2" />
+  <project path="external/gcc-demangle" name="lshain-android-source/external-gcc-demangle" groups="pdk" />
+  <project path="external/genext2fs" name="lshain-android-source/external-genext2fs" />
+  <project path="external/giflib" name="lshain-android-source/external-giflib" />
+  <project path="external/google-diff-match-patch" name="lshain-android-source/external-google-diff-match-patch" />
+  <project path="external/grub" name="lshain-android-source/external-grub" />
+  <project path="external/gtest" name="lshain-android-source/external-gtest" groups="pdk" />
+  <project path="external/guava" name="lshain-android-source/external-guava" />
+  <project path="external/hamcrest" name="lshain-android-source/external-hamcrest" />
+  <project path="external/harfbuzz" name="lshain-android-source/external-harfbuzz" />
+  <project path="external/harfbuzz_ng" name="lshain-android-source/external-harfbuzz_ng" />
+  <project path="external/hyphenation" name="lshain-android-source/external-hyphenation" />
+  <project path="external/icu4c" name="lshain-android-source/external-icu4c" groups="pdk" />
+  <project path="external/iproute2" name="lshain-android-source/external-iproute2" groups="pdk" />
+  <project path="external/ipsec-tools" name="lshain-android-source/external-ipsec-tools" />
+  <project path="external/iptables" name="lshain-android-source/external-iptables" />
+  <project path="external/iputils" name="lshain-android-source/external-iputils" />
+  <project path="external/jack" name="lshain-android-source/external-jack" />
+  <project path="external/javasqlite" name="lshain-android-source/external-javasqlite" />
+  <project path="external/javassist" name="lshain-android-source/external-javassist" />
+  <project path="external/jdiff" name="lshain-android-source/external-jdiff" />
+  <project path="external/jhead" name="lshain-android-source/external-jhead" groups="pdk" />
+  <project path="external/jmdns" name="lshain-android-source/external-jmdns" />
+  <project path="external/jmonkeyengine" name="lshain-android-source/external-jmonkeyengine" />
+  <project path="external/jpeg" name="lshain-android-source/external-jpeg" groups="pdk" />
+  <project path="external/jsilver" name="lshain-android-source/external-jsilver" />
+  <project path="external/jsr305" name="lshain-android-source/external-jsr305" />
+  <project path="external/junit" name="lshain-android-source/external-junit" />
+  <project path="external/kernel-headers" name="lshain-android-source/external-kernel-headers" />
+  <project path="external/libcap-ng" name="lshain-android-source/external-libcap-ng" />
+  <project path="external/libffi" name="lshain-android-source/external-libffi" />
+  <project path="external/libgsm" name="lshain-android-source/external-libgsm" groups="pdk" />
+  <project path="external/liblzf" name="lshain-android-source/external-liblzf" groups="pdk" />
+  <project path="external/libmtp" name="lshain-android-source/external-libmtp" />
+  <project path="external/libnfc-nci" name="lshain-android-source/external-libnfc-nci" groups="pdk" />
+  <project path="external/libnfc-nxp" name="lshain-android-source/external-libnfc-nxp" groups="pdk" />
+  <project path="external/libnl-headers" name="lshain-android-source/external-libnl-headers" groups="pdk" />
+  <project path="external/libogg" name="lshain-android-source/external-libogg" />
+  <project path="external/libpcap" name="lshain-android-source/external-libpcap" />
+  <project path="external/libphonenumber" name="lshain-android-source/external-libphonenumber" />
+  <project path="external/libpng" name="lshain-android-source/external-libpng" groups="pdk" />
+  <project path="external/libppp" name="lshain-android-source/external-libppp" />
+  <project path="external/libselinux" name="lshain-android-source/external-libselinux" groups="pdk" />
+  <project path="external/libsepol" name="lshain-android-source/external-libsepol" groups="pdk" />
+  <project path="external/libusb" name="lshain-android-source/external-libusb" />
+  <project path="external/libusb-compat" name="lshain-android-source/external-libusb-compat" />
+  <project path="external/libvorbis" name="lshain-android-source/external-libvorbis" />
+  <project path="external/libvpx" name="lshain-android-source/external-libvpx" groups="pdk" />
+  <project path="external/libxml2" name="lshain-android-source/external-libxml2" />
+  <project path="external/libxslt" name="lshain-android-source/external-libxslt" />
+  <project path="external/libyuv" name="lshain-android-source/external-libyuv" groups="libyuv" />
+  <project path="external/linux-tools-perf" name="lshain-android-source/external-linux-tools-perf" />
+  <project path="external/littlemock" name="lshain-android-source/external-littlemock" />
+  <project path="external/llvm" name="lshain-android-source/external-llvm" groups="pdk" />
+  <project path="external/lzma" name="lshain-android-source/external-lzma" />
+  <project path="external/marisa-trie" name="lshain-android-source/external-marisa-trie" />
+  <project path="external/markdown" name="lshain-android-source/external-markdown" />
+  <project path="external/mdnsresponder" name="lshain-android-source/external-mdnsresponder" groups="pdk" />
+  <project path="external/mesa3d" name="lshain-android-source/external-mesa3d" />
+  <project path="external/mksh" name="lshain-android-source/external-mksh" groups="pdk" />
+  <project path="external/mockito" name="lshain-android-source/external-mockito" />
+  <project path="external/mockwebserver" name="lshain-android-source/external-mockwebserver" />
+  <project path="external/mp4parser" name="lshain-android-source/external-mp4parser" />
+  <project path="external/mtpd" name="lshain-android-source/external-mtpd" />
+  <project path="external/naver-fonts" name="lshain-android-source/external-naver-fonts" />
+  <project path="external/netcat" name="lshain-android-source/external-netcat" />
+  <project path="external/netperf" name="lshain-android-source/external-netperf" />
+  <project path="external/neven" name="lshain-android-source/external-neven" />
+  <project path="external/nist-pkits" name="lshain-android-source/external-nist-pkits" />
+  <project path="external/nist-sip" name="lshain-android-source/external-nist-sip" />
+  <project path="external/noto-fonts" name="lshain-android-source/external-noto-fonts" />
+  <project path="external/oauth" name="lshain-android-source/external-oauth" />
+  <project path="external/objenesis" name="lshain-android-source/external-objenesis" />
+  <project path="external/okhttp" name="lshain-android-source/external-okhttp" />
+  <project path="external/open-vcdiff" name="lshain-android-source/external-open-vcdiff" />
+  <project path="external/opencv" name="lshain-android-source/external-opencv" />
+  <project path="external/openfst" name="lshain-android-source/external-openfst" />
+  <project path="external/openssh" name="lshain-android-source/external-openssh" />
+  <project path="external/openssl" name="lshain-android-source/external-openssl" groups="pdk" />
+  <project path="external/oprofile" name="lshain-android-source/external-oprofile" />
+  <project path="external/pixman" name="lshain-android-source/external-pixman" />
+  <project path="external/ppp" name="lshain-android-source/external-ppp" />
+  <project path="external/proguard" name="lshain-android-source/external-proguard" groups="pdk-java" />
+  <project path="external/protobuf" name="lshain-android-source/external-protobuf" groups="pdk" />
+  <project path="external/qemu" name="lshain-android-source/external-qemu" />
+  <project path="external/qemu-pc-bios" name="lshain-android-source/external-qemu-pc-bios" />
+  <project path="external/regex-re2" name="lshain-android-source/external-regex-re2" />
+  <project path="external/replicaisland" name="lshain-android-source/external-replicaisland" />
+  <project path="external/robolectric" name="lshain-android-source/external-robolectric" />
+  <project path="external/safe-iop" name="lshain-android-source/external-safe-iop" groups="pdk" />
+  <project path="external/scrypt" name="lshain-android-source/external-scrypt" groups="pdk" />
+  <project path="external/sepolicy" name="lshain-android-source/external-sepolicy" groups="pdk" />
+  <project path="external/sfntly" name="lshain-android-source/external-sfntly" />
+  <project path="external/sil-fonts" name="lshain-android-source/external-sil-fonts" />
+  <project path="external/skia" name="lshain-android-source/external-skia" />
+  <project path="external/smack" name="lshain-android-source/external-smack" />
+  <project path="external/smali" name="lshain-android-source/external-smali" />
+  <project path="external/sonivox" name="lshain-android-source/external-sonivox" groups="pdk" />
+  <project path="external/speex" name="lshain-android-source/external-speex" groups="pdk" />
+  <project path="external/sqlite" name="lshain-android-source/external-sqlite" groups="pdk" />
+  <project path="external/srec" name="lshain-android-source/external-srec" />
+  <project path="external/srtp" name="lshain-android-source/external-srtp" />
+  <project path="external/stlport" name="lshain-android-source/external-stlport" groups="pdk" />
+  <project path="external/strace" name="lshain-android-source/external-strace" />
+  <project path="external/stressapptest" name="lshain-android-source/external-stressapptest" />
+  <project path="external/svox" name="lshain-android-source/external-svox" />
+  <project path="external/tagsoup" name="lshain-android-source/external-tagsoup" />
+  <project path="external/tcpdump" name="lshain-android-source/external-tcpdump" />
+  <project path="external/timezonepicker-support" name="lshain-android-source/external-timezonepicker-support" />
+  <project path="external/tinyalsa" name="lshain-android-source/external-tinyalsa" groups="pdk" />
+  <project path="external/tinycompress" name="lshain-android-source/external-tinycompress" groups="pdk" />
+  <project path="external/tinyxml" name="lshain-android-source/external-tinyxml" groups="pdk" />
+  <project path="external/tinyxml2" name="lshain-android-source/external-tinyxml2" groups="pdk" />
+  <project path="external/tremolo" name="lshain-android-source/external-tremolo" groups="pdk" />
+  <project path="external/v8" name="lshain-android-source/external-v8" />
+  <project path="external/valgrind" name="lshain-android-source/external-valgrind" groups="pdk" />
+  <project path="external/webp" name="lshain-android-source/external-webp" />
+  <project path="external/webrtc" name="lshain-android-source/external-webrtc" groups="pdk" />
+  <project path="external/wpa_supplicant_8" name="lshain-android-source/external-wpa_supplicant_8" groups="pdk" />
+  <project path="external/xmlwriter" name="lshain-android-source/external-xmlwriter" />
+  <project path="external/xmp_toolkit" name="lshain-android-source/external-xmp_toolkit" />
+  <project path="external/yaffs2" name="lshain-android-source/external-yaffs2" groups="pdk" />
+  <project path="external/zlib" name="lshain-android-source/external-zlib" groups="pdk" />
+  <project path="external/zxing" name="lshain-android-source/external-zxing" />
+  <project path="frameworks/av" name="lshain-android-source/frameworks-av" groups="pdk" />
+  <project path="frameworks/base" name="lshain-android-source/frameworks-base" />
+  <project path="frameworks/compile/libbcc" name="lshain-android-source/frameworks-compile-libbcc" groups="pdk" />
+  <project path="frameworks/compile/mclinker" name="lshain-android-source/frameworks-compile-mclinker" groups="pdk" />
+  <project path="frameworks/compile/slang" name="lshain-android-source/frameworks-compile-slang" groups="pdk" />
+  <project path="frameworks/ex" name="lshain-android-source/frameworks-ex" />
+  <project path="frameworks/mff" name="lshain-android-source/frameworks-mff" />
+  <project path="frameworks/ml" name="lshain-android-source/frameworks-ml" />
+  <project path="frameworks/native" name="lshain-android-source/frameworks-native" groups="pdk" />
+  <project path="frameworks/opt/calendar" name="lshain-android-source/frameworks-opt-calendar" />
+  <project path="frameworks/opt/carddav" name="lshain-android-source/frameworks-opt-carddav" />
+  <project path="frameworks/opt/colorpicker" name="lshain-android-source/frameworks-opt-colorpicker" />
+  <project path="frameworks/opt/datetimepicker" name="lshain-android-source/frameworks-opt-datetimepicker" />
+  <project path="frameworks/opt/emoji" name="lshain-android-source/frameworks-opt-emoji" />
+  <project path="frameworks/opt/inputmethodcommon" name="lshain-android-source/frameworks-opt-inputmethodcommon" />
+  <project path="frameworks/opt/mailcommon" name="lshain-android-source/frameworks-opt-mailcommon" />
+  <project path="frameworks/opt/mms" name="lshain-android-source/frameworks-opt-mms" />
+  <project path="frameworks/opt/net/voip" name="lshain-android-source/frameworks-opt-net-voip" />
+  <project path="frameworks/opt/photoviewer" name="lshain-android-source/frameworks-opt-photoviewer" />
+  <project path="frameworks/opt/timezonepicker" name="lshain-android-source/frameworks-opt-timezonepicker" />
+  <project path="frameworks/opt/telephony" name="lshain-android-source/frameworks-opt-telephony" groups="pdk" />
+  <project path="frameworks/opt/vcard" name="lshain-android-source/frameworks-opt-vcard" />
+  <project path="frameworks/rs" name="lshain-android-source/frameworks-rs" groups="pdk" />
+  <project path="frameworks/support" name="lshain-android-source/frameworks-support" />
+  <project path="frameworks/testing" name="lshain-android-source/frameworks-testing" />
+  <project path="frameworks/uiautomator" name="lshain-android-source/frameworks-uiautomator" />
+  <project path="frameworks/volley" name="lshain-android-source/frameworks-volley" />
+  <project path="frameworks/webview" name="lshain-android-source/frameworks-webview" />
+  <project path="frameworks/wilhelm" name="lshain-android-source/frameworks-wilhelm" />
+  <project path="hardware/akm" name="lshain-android-source/hardware-akm" />
+  <project path="hardware/broadcom/libbt" name="lshain-android-source/hardware-broadcom-libbt" groups="pdk" />
+  <project path="hardware/broadcom/wlan" name="lshain-android-source/hardware-broadcom-wlan" groups="broadcom_wlan" />
+  <project path="hardware/invensense" name="lshain-android-source/hardware-invensense" groups="invensense" />
+  <project path="hardware/libhardware" name="lshain-android-source/hardware-libhardware" groups="pdk" />
+  <project path="hardware/libhardware_legacy" name="lshain-android-source/hardware-libhardware_legacy" groups="pdk" />
+  <project path="hardware/qcom/audio" name="lshain-android-source/hardware-qcom-audio" groups="qcom" />
+  <project path="hardware/qcom/bt" name="lshain-android-source/hardware-qcom-bt" groups="qcom" />
+  <project path="hardware/qcom/camera" name="lshain-android-source/hardware-qcom-camera" groups="qcom" />
+  <project path="hardware/qcom/display" name="lshain-android-source/hardware-qcom-display" groups="qcom" />
+  <project path="hardware/qcom/keymaster" name="lshain-android-source/hardware-qcom-keymaster" groups="qcom" />
+  <project path="hardware/qcom/media" name="lshain-android-source/hardware-qcom-media" groups="qcom" />
+  <project path="hardware/qcom/msm8960" name="lshain-android-source/hardware-qcom-msm8960" groups="qcom_msm8960" />
+  <project path="hardware/qcom/msm8x74" name="lshain-android-source/hardware-qcom-msm8x74" groups="qcom_msm8x74" />
+  <project path="hardware/qcom/power" name="lshain-android-source/hardware-qcom-power" groups="qcom" />
+  <project path="hardware/qcom/sensors" name="lshain-android-source/hardware-qcom-sensors" groups="qcom" />
+  <project path="hardware/qcom/wlan" name="lshain-android-source/hardware-qcom-wlan" groups="qcom_wlan" />
+  <project path="hardware/ril" name="lshain-android-source/hardware-ril" groups="pdk" />
+  <project path="hardware/samsung_slsi/exynos5" name="lshain-android-source/hardware-samsung_slsi-exynos5" groups="exynos5" />
+  <project path="hardware/ti/omap3" name="lshain-android-source/hardware-ti-omap3" />
+  <project path="hardware/ti/omap4xxx" name="lshain-android-source/hardware-ti-omap4xxx" groups="omap4" />
+  <project path="hardware/ti/wlan" name="lshain-android-source/hardware-ti-wlan" />
+  <project path="hardware/ti/wpan" name="lshain-android-source/hardware-ti-wpan" />
+  <project path="libcore" name="lshain-android-source/libcore" />
+  <project path="libnativehelper" name="lshain-android-source/libnativehelper" groups="pdk-java" />
+  <project path="ndk" name="lshain-android-source/ndk" />
+  <project path="packages/apps/BasicSmsReceiver" name="lshain-android-source/packages-apps-BasicSmsReceiver" />
+  <project path="packages/apps/Bluetooth" name="lshain-android-source/packages-apps-Bluetooth" />
+  <project path="packages/apps/Browser" name="lshain-android-source/packages-apps-Browser" />
+  <project path="packages/apps/Calculator" name="lshain-android-source/packages-apps-Calculator" />
+  <project path="packages/apps/Calendar" name="lshain-android-source/packages-apps-Calendar" />
+  <project path="packages/apps/Camera" name="lshain-android-source/packages-apps-Camera" />
+  <project path="packages/apps/Camera2" name="lshain-android-source/packages-apps-Camera2" />
+  <project path="packages/apps/CellBroadcastReceiver" name="lshain-android-source/packages-apps-CellBroadcastReceiver" />
+  <project path="packages/apps/CertInstaller" name="lshain-android-source/packages-apps-CertInstaller" />
+  <project path="packages/apps/Contacts" name="lshain-android-source/packages-apps-Contacts" />
+  <project path="packages/apps/ContactsCommon" name="lshain-android-source/packages-apps-ContactsCommon" />
+  <project path="packages/apps/DeskClock" name="lshain-android-source/packages-apps-DeskClock" />
+  <project path="packages/apps/Dialer" name="lshain-android-source/packages-apps-Dialer" />
+  <project path="packages/apps/Email" name="lshain-android-source/packages-apps-Email" />
+  <project path="packages/apps/Exchange" name="lshain-android-source/packages-apps-Exchange" />
+  <project path="packages/apps/Gallery" name="lshain-android-source/packages-apps-Gallery" />
+  <project path="packages/apps/Gallery2" name="lshain-android-source/packages-apps-Gallery2" />
+  <project path="packages/apps/HTMLViewer" name="lshain-android-source/packages-apps-HTMLViewer" />
+  <project path="packages/apps/InCallUI" name="lshain-android-source/packages-apps-InCallUI" />
+  <project path="packages/apps/KeyChain" name="lshain-android-source/packages-apps-KeyChain" />
+  <project path="packages/apps/Launcher2" name="lshain-android-source/packages-apps-Launcher2" />
+  <project path="packages/apps/Launcher3" name="lshain-android-source/packages-apps-Launcher3" />
+  <project path="packages/apps/LegacyCamera" name="lshain-android-source/packages-apps-LegacyCamera" />
+  <project path="packages/apps/Mms" name="lshain-android-source/packages-apps-Mms" />
+  <project path="packages/apps/Music" name="lshain-android-source/packages-apps-Music" />
+  <project path="packages/apps/MusicFX" name="lshain-android-source/packages-apps-MusicFX" />
+  <project path="packages/apps/Nfc" name="lshain-android-source/packages-apps-Nfc" />
+  <project path="packages/apps/OneTimeInitializer" name="lshain-android-source/packages-apps-OneTimeInitializer" />
+  <project path="packages/apps/PackageInstaller" name="lshain-android-source/packages-apps-PackageInstaller" />
+  <project path="packages/apps/Phone" name="lshain-android-source/packages-apps-Phone" />
+  <project path="packages/apps/PhoneCommon" name="lshain-android-source/packages-apps-PhoneCommon" />
+  <project path="packages/apps/Protips" name="lshain-android-source/packages-apps-Protips" />
+  <project path="packages/apps/Provision" name="lshain-android-source/packages-apps-Provision" />
+  <project path="packages/apps/QuickSearchBox" name="lshain-android-source/packages-apps-QuickSearchBox" />
+  <project path="packages/apps/Settings" name="lshain-android-source/packages-apps-Settings" />
+  <project path="packages/apps/SmartCardService" name="lshain-android-source/packages-apps-SmartCardService" />
+  <project path="packages/apps/SoundRecorder" name="lshain-android-source/packages-apps-SoundRecorder" />
+  <project path="packages/apps/SpareParts" name="lshain-android-source/packages-apps-SpareParts" />
+  <project path="packages/apps/SpeechRecorder" name="lshain-android-source/packages-apps-SpeechRecorder" />
+  <project path="packages/apps/Stk" name="lshain-android-source/packages-apps-Stk" />
+  <project path="packages/apps/Tag" name="lshain-android-source/packages-apps-Tag" />
+  <project path="packages/apps/UnifiedEmail" name="lshain-android-source/packages-apps-UnifiedEmail" />
+  <project path="packages/apps/VideoEditor" name="lshain-android-source/packages-apps-VideoEditor" />
+  <project path="packages/apps/VoiceDialer" name="lshain-android-source/packages-apps-VoiceDialer" />
+  <project path="packages/experimental" name="lshain-android-source/packages-experimental" />
+  <project path="packages/inputmethods/LatinIME" name="lshain-android-source/packages-inputmethods-LatinIME" />
+  <project path="packages/inputmethods/OpenWnn" name="lshain-android-source/packages-inputmethods-OpenWnn" />
+  <project path="packages/inputmethods/PinyinIME" name="lshain-android-source/packages-inputmethods-PinyinIME" />
+  <project path="packages/providers/ApplicationsProvider" name="lshain-android-source/packages-providers-ApplicationsProvider" />
+  <project path="packages/providers/CalendarProvider" name="lshain-android-source/packages-providers-CalendarProvider" />
+  <project path="packages/providers/ContactsProvider" name="lshain-android-source/packages-providers-ContactsProvider" />
+  <project path="packages/providers/DownloadProvider" name="lshain-android-source/packages-providers-DownloadProvider" />
+  <project path="packages/providers/MediaProvider" name="lshain-android-source/packages-providers-MediaProvider" />
+  <project path="packages/providers/PartnerBookmarksProvider" name="lshain-android-source/packages-providers-PartnerBookmarksProvider" />
+  <project path="packages/providers/TelephonyProvider" name="lshain-android-source/packages-providers-TelephonyProvider" />
+  <project path="packages/providers/UserDictionaryProvider" name="lshain-android-source/packages-providers-UserDictionaryProvider" />
+  <project path="packages/screensavers/Basic" name="lshain-android-source/packages-screensavers-Basic" />
+  <project path="packages/screensavers/PhotoTable" name="lshain-android-source/packages-screensavers-PhotoTable" />
+  <project path="packages/screensavers/WebView" name="lshain-android-source/packages-screensavers-WebView" />
+  <project path="packages/services/Telephony" name="lshain-android-source/packages-services-Telephony" />
+  <project path="packages/wallpapers/Basic" name="lshain-android-source/packages-wallpapers-Basic" />
+  <project path="packages/wallpapers/Galaxy4" name="lshain-android-source/packages-wallpapers-Galaxy4" />
+  <project path="packages/wallpapers/HoloSpiral" name="lshain-android-source/packages-wallpapers-HoloSpiral" />
+  <project path="packages/wallpapers/LivePicker" name="lshain-android-source/packages-wallpapers-LivePicker" />
+  <project path="packages/wallpapers/MagicSmoke" name="lshain-android-source/packages-wallpapers-MagicSmoke" />
+  <project path="packages/wallpapers/MusicVisualization" name="lshain-android-source/packages-wallpapers-MusicVisualization" />
+  <project path="packages/wallpapers/NoiseField" name="lshain-android-source/packages-wallpapers-NoiseField" />
+  <project path="packages/wallpapers/PhaseBeam" name="lshain-android-source/packages-wallpapers-PhaseBeam" />
+  <project path="pdk" name="lshain-android-source/pdk" groups="pdk" />
+  <project path="prebuilts/clang/darwin-x86/3.1" name="lshain-android-source/prebuilts-clang-darwin-x86-3.1" groups="pdk,darwin" />
+  <project path="prebuilts/clang/darwin-x86/3.2" name="lshain-android-source/prebuilts-clang-darwin-x86-3.2" groups="pdk,darwin" />
+  <project path="prebuilts/clang/darwin-x86/arm/3.3" name="lshain-android-source/prebuilts-clang-darwin-x86-arm-3.3" groups="darwin,arm" />
+  <project path="prebuilts/clang/darwin-x86/host/3.3" name="lshain-android-source/prebuilts-clang-darwin-x86-host-3.3" groups="darwin" />
+  <project path="prebuilts/clang/darwin-x86/mips/3.3" name="lshain-android-source/prebuilts-clang-darwin-x86-mips-3.3" groups="darwin,mips" />
+  <project path="prebuilts/clang/darwin-x86/x86/3.3" name="lshain-android-source/prebuilts-clang-darwin-x86-x86-3.3" groups="darwin,x86" />
+  <project path="prebuilts/clang/linux-x86/3.1" name="lshain-android-source/prebuilts-clang-linux-x86-3.1" groups="pdk,linux" />
+  <project path="prebuilts/clang/linux-x86/3.2" name="lshain-android-source/prebuilts-clang-linux-x86-3.2" groups="pdk,linux" />
+  <project path="prebuilts/clang/linux-x86/arm/3.3" name="lshain-android-source/prebuilts-clang-linux-x86-arm-3.3" groups="linux,arm" />
+  <project path="prebuilts/clang/linux-x86/host/3.3" name="lshain-android-source/prebuilts-clang-linux-x86-host-3.3" groups="linux" />
+  <project path="prebuilts/clang/linux-x86/mips/3.3" name="lshain-android-source/prebuilts-clang-linux-x86-mips-3.3" groups="linux,mips" />
+  <project path="prebuilts/clang/linux-x86/x86/3.3" name="lshain-android-source/prebuilts-clang-linux-x86-x86-3.3" groups="linux,x86" />
+  <project path="prebuilts/devtools" name="lshain-android-source/prebuilts-devtools" />
+  <project path="prebuilts/eclipse" name="lshain-android-source/prebuilts-eclipse" groups="pdk" />
+  <project path="prebuilts/eclipse-build-deps" name="lshain-android-source/prebuilts-eclipse-build-deps" groups="notdefault,eclipse" />
+  <project path="prebuilts/eclipse-build-deps-sources" name="lshain-android-source/prebuilts-eclipse-build-deps-sources" groups="notdefault,eclipse" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6" name="lshain-android-source/prebuilts-gcc-darwin-x86-arm-arm-eabi-4.6" groups="pdk,darwin,arm" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" name="lshain-android-source/prebuilts-gcc-darwin-x86-arm-arm-eabi-4.7" groups="pdk,darwin,arm" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6" name="lshain-android-source/prebuilts-gcc-darwin-x86-arm-arm-linux-androideabi-4.6" groups="pdk,darwin,arm" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7" name="lshain-android-source/prebuilts-gcc-darwin-x86-arm-arm-linux-androideabi-4.7" groups="pdk,darwin,arm" />
+  <project path="prebuilts/gcc/darwin-x86/host/headers" name="lshain-android-source/prebuilts-gcc-darwin-x86-host-headers" groups="pdk,darwin" />
+  <project path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" name="lshain-android-source/prebuilts-gcc-darwin-x86-host-i686-apple-darwin-4.2.1" groups="pdk,darwin" />
+  <project path="prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.6" name="lshain-android-source/prebuilts-gcc-darwin-x86-mips-mipsel-linux-android-4.6" groups="pdk,darwin,mips" />
+  <project path="prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.7" name="lshain-android-source/prebuilts-gcc-darwin-x86-mips-mipsel-linux-android-4.7" groups="pdk,darwin,mips" />
+  <project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6" name="lshain-android-source/prebuilts-gcc-darwin-x86-x86-i686-linux-android-4.6" groups="pdk,darwin,x86" />
+  <project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" name="lshain-android-source/prebuilts-gcc-darwin-x86-x86-i686-linux-android-4.7" groups="pdk,darwin,x86" />
+  <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.7" name="lshain-android-source/prebuilts-gcc-darwin-x86-x86-x86_64-linux-android-4.7" groups="pdk,darwin,x86" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" name="lshain-android-source/prebuilts-gcc-linux-x86-arm-arm-eabi-4.6" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="lshain-android-source/prebuilts-gcc-linux-x86-arm-arm-eabi-4.7" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" name="lshain-android-source/prebuilts-gcc-linux-x86-arm-arm-linux-androideabi-4.6" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="lshain-android-source/prebuilts-gcc-linux-x86-arm-arm-linux-androideabi-4.7" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" name="lshain-android-source/prebuilts-gcc-linux-x86-host-i686-linux-glibc2.7-4.4.3" groups="pdk,linux" />
+  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="lshain-android-source/prebuilts-gcc-linux-x86-host-i686-linux-glibc2.7-4.6" groups="pdk,linux" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="lshain-android-source/prebuilts-gcc-linux-x86-host-x86_64-linux-glibc2.7-4.6" groups="pdk,linux" />
+  <project path="prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.6" name="lshain-android-source/prebuilts-gcc-linux-x86-mips-mipsel-linux-android-4.6" groups="pdk,linux,mips" />
+  <project path="prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.7" name="lshain-android-source/prebuilts-gcc-linux-x86-mips-mipsel-linux-android-4.7" groups="pdk,linux,mips" />
+  <project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6" name="lshain-android-source/prebuilts-gcc-linux-x86-x86-i686-linux-android-4.6" groups="pdk,linux,x86" />
+  <project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7" name="lshain-android-source/prebuilts-gcc-linux-x86-x86-i686-linux-android-4.7" groups="pdk,linux,x86" />
+  <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.7" name="lshain-android-source/prebuilts-gcc-linux-x86-x86-x86_64-linux-android-4.7" groups="pdk,linux,x86" />
+  <project path="prebuilts/misc" name="lshain-android-source/prebuilts-misc" groups="pdk" />
+  <project path="prebuilts/ndk" name="lshain-android-source/prebuilts-ndk" groups="pdk" />
+  <project path="prebuilts/python/darwin-x86/2.7.5" name="lshain-android-source/prebuilts-python-darwin-x86-2.7.5" groups="darwin" />
+  <project path="prebuilts/python/linux-x86/2.7.5" name="lshain-android-source/prebuilts-python-linux-x86-2.7.5" groups="linux" />
+  <project path="prebuilts/qemu-kernel" name="lshain-android-source/prebuilts-qemu-kernel" groups="pdk" />
+  <project path="prebuilts/runtime" name="lshain-android-source/prebuilts-runtime" />
+  <project path="prebuilts/sdk" name="lshain-android-source/prebuilts-sdk" groups="pdk" />
+  <project path="prebuilts/tools" name="lshain-android-source/prebuilts-tools" groups="pdk,tools" />
+  <project path="sdk" name="lshain-android-source/sdk" />
+  <project path="system/core" name="lshain-android-source/system-core" groups="pdk" />
+  <project path="system/extras" name="lshain-android-source/system-extras" groups="pdk" />
+  <project path="system/media" name="lshain-android-source/system-media" groups="pdk" />
+  <project path="system/netd" name="lshain-android-source/system-netd" groups="pdk" />
+  <project path="system/security" name="lshain-android-source/system-security" groups="pdk" />
+  <project path="system/vold" name="lshain-android-source/system-vold" groups="pdk" />
+  <project path="tools/adt/eclipse" name="lshain-android-source/tools-adt-eclipse" groups="notdefault,tools" />
+  <project path="tools/adt/idea" name="lshain-android-source/tools-adt-idea" groups="notdefault,tools" />
+  <project path="tools/base" name="lshain-android-source/tools-base" groups="notdefault,tools" />
+  <project path="tools/build" name="lshain-android-source/tools-build" groups="notdefault,tools" />
+  <project path="tools/emulator" name="lshain-android-source/tools-emulator" groups="notdefault,tools" />
+  <project path="tools/external/fat32lib" name="lshain-android-source/tools-external-fat32lib" groups="tools" />
+  <project path="tools/external/gradle" name="lshain-android-source/tools-external-gradle" groups="tools" />
+  <project path="tools/idea" name="lshain-android-source/tools-idea" groups="notdefault,tools" />
+  <project path="tools/motodev" name="lshain-android-source/tools-motodev" groups="notdefault,motodev" />
+  <project path="tools/studio/cloud" name="lshain-android-source/tools-studio-cloud" groups="notdefault,tools" />
+  <project path="tools/swt" name="lshain-android-source/tools-swt" groups="notdefault,tools" />
+
+</manifest>
