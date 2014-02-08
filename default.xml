@@ -51,6 +51,7 @@
   <project path="device/samsung/manta" name="lshain-android-source/device-samsung-manta" groups="device,manta" />
   <project path="docs/source.android.com" name="lshain-android-source/docs-source.android.com" />
   <project path="external/aac" name="lshain-android-source/external-aac" groups="pdk" />
+  <project path="external/abc" name="lshain-android-source/external-abc" />
   <project path="external/android-clat" name="lshain-android-source/external-android-clat" />
   <project path="external/android-mock" name="lshain-android-source/external-android-mock" />
   <project path="external/ant-glob" name="lshain-android-source/external-ant-glob" />
