@@ -8,7 +8,11 @@
            sync-j="4" />
 
   <project path="test" name="lshain-android-source/test" />
-  <project path="script" name="lshain-android-source/script" />
+  <project path="script" name="lshain-android-source/script" >
+      <copyfile src="flo/extract-asus-flo.sh" dest="extract-asus-flo.sh" />
+      <copyfile src="flo/extract-broadcom-flo.sh" dest="extract-broadcom-flo.sh" />
+      <copyfile src="flo/extract-qcom-flo.sh" dest="extract-qcom-flo.sh" />
+  </project>
 
   <project path="build" name="lshain-android-source/build" groups="pdk" >
       <copyfile src="core/root.mk" dest="Makefile" />
