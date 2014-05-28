@@ -345,6 +345,7 @@
   <project path="packages/apps/Tag" name="lshain-android-source/packages-apps-Tag" />
   <project path="packages/apps/UnifiedEmail" name="lshain-android-source/packages-apps-UnifiedEmail" />
   <project path="packages/apps/VideoEditor" name="lshain-android-source/packages-apps-VideoEditor" />
+  <project path="packages/apps/TestProject" name="lshain-android-source/packages-apps-TestProject" />
   <project path="packages/apps/VoiceDialer" name="lshain-android-source/packages-apps-VoiceDialer" />
   <project path="packages/experimental" name="lshain-android-source/packages-experimental" />
   <project path="packages/inputmethods/LatinIME" name="lshain-android-source/packages-inputmethods-LatinIME" />
