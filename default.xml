@@ -4,6 +4,7 @@
            fetch="git://github.com" />
 
   <remote  name="custom"
+		   revision="refs/heads/master"
 	       fetch="../../private_storage" />
 
   <default revision="refs/heads/master"
