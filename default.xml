@@ -5,7 +5,7 @@
 
   <remote  name="custom"
 		   revision="refs/heads/master"
-	       fetch="../../private_storage" />
+		   fetch="/media/oem/develop/private_storage" />
 
   <default revision="refs/heads/master"
            remote="origin"
