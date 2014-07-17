@@ -3,10 +3,6 @@
   <remote  name="origin"
            fetch="git://github.com" />
 
-  <remote  name="custom"
-		   revision="refs/heads/master"
-		   fetch="/media/oem/develop/private_storage" />
-
   <default revision="refs/heads/master"
            remote="origin"
            sync-j="4" />
@@ -349,7 +345,6 @@
   <project path="packages/apps/Tag" name="lshain-android-source/packages-apps-Tag" />
   <project path="packages/apps/UnifiedEmail" name="lshain-android-source/packages-apps-UnifiedEmail" />
   <project path="packages/apps/VideoEditor" name="lshain-android-source/packages-apps-VideoEditor" />
-  <project path="packages/apps/TestProject" name="TestProject" remote="custom" />
   <project path="packages/apps/VoiceDialer" name="lshain-android-source/packages-apps-VoiceDialer" />
   <project path="packages/experimental" name="lshain-android-source/packages-experimental" />
   <project path="packages/inputmethods/LatinIME" name="lshain-android-source/packages-inputmethods-LatinIME" />
